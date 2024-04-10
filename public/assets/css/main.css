@@ -70,7 +70,7 @@ h4,
 h5,
 h6 {
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   color: #0e1133;
   margin: 0px;
 }
@@ -2331,6 +2331,7 @@ p {
   background: #fff;
   border-radius: 6px;
   transition: all linear 0.3s;
+  height: 374px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .appie-single-service {
@@ -2867,7 +2868,7 @@ p {
 .appie-features-box-item .title {
   color: #fff;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   position: relative;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

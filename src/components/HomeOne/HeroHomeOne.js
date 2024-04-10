@@ -8,24 +8,21 @@ function HeroHomeOne({ className }) {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="appie-hero-content">
-                                <span>Welcome To Appie</span>
                                 <h1 className="appie-title">
-                                    Manage it all, in this all new system.
+                                The best phone monitoring software for parental control
                                 </h1>
                                 <p>
-                                    Hanky panky lavatory up the duff jolly good cack brolly is
-                                    chinwag zonked happy days sloshed.
+                                Know everything happens on your kids' cell phone or tablet. Without installing an app or physical access. Set up your monitoring in just 2 minutes!
                                 </p>
                                 <ul>
                                     <li>
                                         <a href="#">
-                                            <i className="fab fa-apple" /> Download for iOS
+                                            Try now
                                         </a>
                                     </li>
                                     <li>
                                         <a className="item-2" href="#">
-                                            <i className="fab fa-google-play" /> Download for
-                                            Android
+                                            View demo
                                         </a>
                                     </li>
                                 </ul>
@@ -40,13 +37,13 @@ function HeroHomeOne({ className }) {
                                 >
                                     <img src='/assets/images/hero-thumb-1.png' alt="" />
                                 </div>
-                                <div
+                                {/*<div
                                     className="thumb-2 wow animated fadeInRight"
                                     data-wow-duration="2000ms"
                                     data-wow-delay="600ms"
                                 >
                                     <img src='/assets/images/hero-thumb-2.png' alt="" />
-                                </div>
+                                </div>*/}
                             </div>
                         </div>
                     </div>

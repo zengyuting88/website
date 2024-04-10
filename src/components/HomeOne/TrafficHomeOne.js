@@ -7,8 +7,7 @@ function TrafficHomeOne({ className }) {
                 <div className="row">
                     <div className="col-lg-7">
                         <div className="appie-traffic-title">
-                            <span>Traffic</span>
-                            <h3 className="title">Stage reporting with 50k queries.</h3>
+                            <h3 className="title" style={{ whiteSpace: 'nowrap' }}>Why choose SpyX phone monitoring<br></br> software</h3>
                             <p>
                                 He nicked it tickety boo harry the cras bargy chap mush spiffing
                                 spend a penny the full monty burke butty.

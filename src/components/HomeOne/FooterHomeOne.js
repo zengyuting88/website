@@ -117,23 +117,9 @@ function FooterHomeOne({ className }) {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="footer-copyright d-flex align-items-center justify-content-between pt-35">
-                                <div className="apps-download-btn">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fab fa-apple" /> Download for iOS
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a className="item-2" href="#">
-                                                <i className="fab fa-google-play" /> Download for
-                                                Android
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                          
                                 <div className="copyright-text">
-                                    <p>Copyright © 2021 Appie. All rights reserved.</p>
+                                    <p style={{ textAlign: 'center' }}>Copyright © 2024 Appie. All rights reserved.</p>
                                 </div>
                             </div>
                         </div>

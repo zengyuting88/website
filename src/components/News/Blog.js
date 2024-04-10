@@ -3,6 +3,7 @@ import React from 'react';
 function Blog() {
     return (
         <>
+        <h1 className="article-title">Logotype Masterclass with Jessica Hische</h1>
             <div className="single-post-area">
                 <p>
                     Tosser posh grub he lost his bottle bamboozled show off show off pick your nose
@@ -10,26 +11,56 @@ function Blog() {
                     squeak I Charles a load of old tosh some dodgy chav wind up David gormless,
                     hotpot arse over tit hanky panky bog-standard dont get shirty with me bloke
                     Richard. Smashing he legged it in my flat bodge a blinding shot amongst
-                    brilliant blag, I grub A bit of hows your father bite your arm off the BBC the
-                    full monty chancer, bobby bender he nicked it down the pub Why cheeky bugger.
-                    Starkers pardon you bubble and squeak a blinding shot its all gone to pot bits
-                    and bobs car boot lurgy so I said cheesed off boot Harry such a fibber, naff
-                    chinwag bamboozled the bees knees bloke fanny around loo are you taking the
-                    piss barney off his nut cack. Arse over tit he nicked it that matie boy lost the
-                    plot pardon me my lady well cheers he legged it, boot bits and bobs brown bread
-                    is cras bamboozled bite your arm off down the pub brolly, cobblers horse play
-                    what a load of rubbish sloshed chancer say you mug cockup. Geeza some dodgy chav
-                    bonnet Oxford so I said pukka pardon you starkers cor blimey guvnor are you
-                    taking the piss, cheesed off in my flat cheeky posh down the pub horse play
-                    nancy boy plastered cobblers cack, morish chinwag the BBC my good sir jolly good
-                    cuppa amongst blatant. Grub owt to do with me cheeky bugger squiffy chinwag
-                    pukka say hunky-dory crikey quaint fanny around jolly good brown bread up the
-                    kyver cack zonked tickety boo mush morish.
                 </p>
-                <div className="post-thumb">
-                    <img src='/assets/images/single-post/1.jpg' alt="" />
-                </div>
-                <h4 className="article-title">Logotype Masterclass with Jessica Hische</h4>
+                <strong><span style={{ fontSize: '20px' }}>Table of Contents</span></strong>
+      <div style={{
+        backgroundColor: '#f8f8f8',
+        padding: '20px',
+        borderRadius: '5px',
+        width: '80%',
+        paddingLeft: '60px',
+        lineHeight: '1.6', // 设置适当的行间距
+        margin:'0 0 30px',
+      }} className="custom-list">
+        {/* 使用 margin-bottom 而不是 <br> 来控制间距 */}
+        <a style={{
+          color: '#2b70fa',
+          textDecoration: 'none',
+          display: 'block',
+          padding: '5px 0',
+          transition: 'color 0.3s',
+          
+        
+        }} href="#skip1">1. Some Features of the Best Security System for Store？</a>
+        
+        <a style={{
+          textDecoration: 'none',
+          display: 'block',
+          padding: '5px 0',
+          transition: 'color 0.3s',
+          
+         
+        }} href="#skip2">2. Why Choose Techage Security Cameras For Your Store?</a>
+        
+        <a style={{
+          textDecoration: 'none',
+          display: 'block',
+          padding: '5px 0',
+          transition: 'color 0.3s',
+         
+         
+        }} href="#skip3">3. How Can Techage Security Cameras Protect Your Store?</a>
+        
+        {/* 最后一个链接不需要 marginBottom，除非下面还有其他内容 */}
+        <a style={{
+          textDecoration: 'none',
+          display: 'block',
+          padding: '5px 0',
+          transition: 'color 0.3s',
+         
+        }} href="#skip4">4. FAQ</a>
+      </div>
+                
                 <p>
                     Lost the plot morish bleeder absolutely bladdered my lady chinwag that bleeding
                     Eaton blag, cheeky bugger burke matie boy brown bread say pukka off his nut
@@ -111,6 +142,7 @@ function Blog() {
                             <h5>
                                 <a href="#">Jason Response</a>
                             </h5>
+                            <div id="skip2"></div>
                             <span>April 03, 2019</span>
                             <div className="comment">
                                 <p>
@@ -153,6 +185,7 @@ function Blog() {
                                         <a href="#">Douglas Lyphe</a>
                                     </h5>
                                     <span>July 27, 2020</span>
+                                    <div id="skip3"></div>
                                     <div className="comment">
                                         <p>
                                             Oxford baking cakes dropped clanger fanny around

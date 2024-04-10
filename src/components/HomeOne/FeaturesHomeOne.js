@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Link from "next/link";
-
 function FeaturesHomeOne({ className }) {
     const [tab, setTab] = useState('setting');
     const handleClick = (e, value) => {
@@ -8,7 +7,7 @@ function FeaturesHomeOne({ className }) {
         setTab(value);
     };
     return (
-        <section className={`appie-features-area pt-100 ${className}`} id="features">
+        <section className={`appie-features-area pt-100 ${className}`} id="features" style={{ paddingBottom: '100px' }}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-3">
@@ -27,8 +26,17 @@ function FeaturesHomeOne({ className }) {
                                     role="tab"
                                     aria-controls="v-pills-home"
                                     aria-selected="true"
+                                    style={{
+                                        height: '135px', 
+                                        display: 'flex', 
+                                        flexDirection: 'column', 
+                                        justifyContent: 'center', 
+                                        textAlign: 'left', 
+                                        width: '350px',}}
                                 >
-                                    <i className="fas fa-cog" /> Settings
+                                      <span style={{ fontSize: '20px', fontWeight: 'bold', padding: '10px' }}>Step 1: Sign Up for Free</span>
+                                      <span style={{ fontSize: '16px', padding: '10px' }}>Sign up for a SpyX account with your usual email address.</span>
+                                  
                                 </Link>
                                 <Link
                                     onClick={(e) => handleClick(e, 'report')}
@@ -39,8 +47,19 @@ function FeaturesHomeOne({ className }) {
                                     role="tab"
                                     aria-controls="v-pills-profile"
                                     aria-selected="false"
+                                    style={{
+                                        height: '135px', 
+                                        display: 'flex', 
+                                        flexDirection: 'column', 
+                                        justifyContent: 'center', 
+                                        textAlign: 'left', 
+                                        width: '350px',}}
                                 >
-                                    <i className="fas fa-exclamation-triangle" /> Report
+                                   <span style={{ fontSize: '20px', fontWeight: 'bold', padding: '10px' }}>Step 2: Connect Target Device</span>
+                                   <span style={{ fontSize: '16px', padding: '10px' }}>Bind the target mobile phone you want to monitor.</span>
+                                    
+
+                                    
                                 </Link>
                                 <Link
                                     onClick={(e) => handleClick(e, 'notice')}
@@ -51,21 +70,19 @@ function FeaturesHomeOne({ className }) {
                                     role="tab"
                                     aria-controls="v-pills-messages"
                                     aria-selected="false"
+                                    style={{
+                                        height: '135px', 
+                                        display: 'flex', 
+                                        flexDirection: 'column', 
+                                        justifyContent: 'center', 
+                                        textAlign: 'left', 
+                                        width: '350px',}}
                                 >
-                                    <i className="fas fa-bell" /> Saeety Notices
+                                  <span style={{ fontSize: '20px', fontWeight: 'bold', padding: '10px' }}>Step 3: Find Out the Truth</span>
+                                  <span style={{ fontSize: '16px', padding: '10px' }}>Start monitoring in real time on the SpyX control panel.</span>
+                                    
                                 </Link>
-                                <Link
-                                    onClick={(e) => handleClick(e, 'app')}
-                                    className={`nav-link ${tab === 'app' ? 'active' : ''}`}
-                                    id="v-pills-settings-tab"
-                                    data-toggle="pill"
-                                    href="#"
-                                    role="tab"
-                                    aria-controls="v-pills-settings"
-                                    aria-selected="false"
-                                >
-                                    <i className="fas fa-lock" /> App Lock
-                                </Link>
+                                
                             </div>
                         </div>
                     </div>
@@ -79,34 +96,16 @@ function FeaturesHomeOne({ className }) {
                                 aria-labelledby="v-pills-home-tab"
                             >
                                 <div className="row align-items-center">
-                                    <div className="col-lg-6">
+                                    <div className="col-lg-12">
                                         <div
                                             className="appie-features-thumb text-center wow animated fadeInUp"
                                             data-wow-duration="2000ms"
                                             data-wow-delay="200ms"
                                         >
-                                            <img src='/assets/images/features-thumb-1.png' alt="" />
+                                            <img src='https://spyx.com/image/BroductSteps/14.png' alt="" />
                                         </div>
                                     </div>
-                                    <div className="col-lg-6">
-                                        <div
-                                            className="appie-features-content wow animated fadeInRight"
-                                            data-wow-duration="2000ms"
-                                            data-wow-delay="600ms"
-                                        >
-                                            <span>Custom Reacyions</span>
-                                            <h3 className="title">
-                                                Let the <br /> Conversation flow
-                                            </h3>
-                                            <p>
-                                                Car boot absolutely bladdered posh burke the
-                                                wireless mush some dodg.
-                                            </p>
-                                            <Link className="main-btn" href="/about-us">
-                                                Learn More
-                                            </Link>
-                                        </div>
-                                    </div>
+                            
                                 </div>
                             </div>
                             <div
@@ -115,34 +114,16 @@ function FeaturesHomeOne({ className }) {
                                 aria-labelledby="v-pills-profile-tab"
                             >
                                 <div className="row align-items-center">
-                                    <div className="col-lg-6">
+                                    <div className="col-lg-12">
                                         <div
                                             className="appie-features-thumb text-center animated fadeInUp"
                                             data-wow-duration="2000ms"
                                             data-wow-delay="200ms"
                                         >
-                                            <img src='/assets/images/features-thumb-1.png' alt="" />
+                                            <img src='https://spyx.com/image/BroductSteps/15.png' alt="" />
                                         </div>
                                     </div>
-                                    <div className="col-lg-6">
-                                        <div
-                                            className="appie-features-content animated fadeInRight"
-                                            data-wow-duration="2000ms"
-                                            data-wow-delay="600ms"
-                                        >
-                                            <span>Custom Reacyions</span>
-                                            <h3 className="title">
-                                                Let the <br /> Conversation flow
-                                            </h3>
-                                            <p>
-                                                Car boot absolutely bladdered posh burke the
-                                                wireless mush some dodg.
-                                            </p>
-                                            <a className="main-btn" href="#">
-                                                Learn More
-                                            </a>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div
@@ -152,72 +133,22 @@ function FeaturesHomeOne({ className }) {
                                 aria-labelledby="v-pills-messages-tab"
                             >
                                 <div className="row align-items-center">
-                                    <div className="col-lg-6">
+                                    <div className="col-lg-12">
                                         <div
                                             className="appie-features-thumb text-center animated fadeInUp"
                                             data-wow-duration="2000ms"
                                             data-wow-delay="200ms"
                                         >
-                                            <img src='/assets/images/features-thumb-1.png' alt="" />
+                                            <img src='https://spyx.com/image/BroductSteps/16.png' alt="" />
+                    
                                         </div>
-                                    </div>
-                                    <div className="col-lg-6">
-                                        <div
-                                            className="appie-features-content animated fadeInRight"
-                                            data-wow-duration="2000ms"
-                                            data-wow-delay="600ms"
-                                        >
-                                            <span>Custom Reacyions</span>
-                                            <h3 className="title">
-                                                Let the <br /> Conversation flow
-                                            </h3>
-                                            <p>
-                                                Car boot absolutely bladdered posh burke the
-                                                wireless mush some dodg.
-                                            </p>
-                                            <a className="main-btn" href="#">
-                                                Learn More
-                                            </a>
                                         </div>
-                                    </div>
+                                       
+                                    
+                                    
                                 </div>
                             </div>
-                            <div
-                                className={`${tab === 'app' ? 'show active' : ''} tab-pane fade`}
-                                id="v-pills-settings"
-                                aria-labelledby="v-pills-settings-tab"
-                            >
-                                <div className="row align-items-center">
-                                    <div className="col-lg-6">
-                                        <div
-                                            className="appie-features-thumb text-center animated fadeInUp"
-                                            data-wow-duration="2000ms"
-                                            data-wow-delay="200ms"
-                                        >
-                                            <img src='/assets/images/features-thumb-1.png' alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6">
-                                        <div
-                                            className="appie-features-content animated fadeInRight"
-                                            data-wow-duration="2000ms"
-                                            data-wow-delay="600ms"
-                                        >
-                                            <span>Custom Reacyions</span>
-                                            <h3 className="title">
-                                                Let the <br /> Conversation flow
-                                            </h3>
-                                            <p>
-                                                Car boot absolutely bladdered posh burke the
-                                                wireless mush some dodg.
-                                            </p>
-                                            <a className="main-btn" href="#">
-                                                Learn More
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

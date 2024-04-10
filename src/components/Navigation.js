@@ -4,7 +4,7 @@ import Link from "next/link";
 function Navigation({ lang = false }) {
     return (
         <>
-            {lang ? (
+            {/*{lang ? (
                 <ul>
                     <li>
                         <a href="#">
@@ -76,13 +76,15 @@ function Navigation({ lang = false }) {
                         <Link href="/contact">اتصل</Link>
                     </li>
                 </ul>
-            ) : (
+            ) : */}
+           
                 <ul>
                     <li>
-                        <a href="#">
+                        {/* <a href="#">
                             Home <i className="fal fa-angle-down" />
-                        </a>
-                        <ul className="sub-menu">
+                        </a>*/}
+                        <Link href="#">Home</Link>
+                        {/*<ul className="sub-menu">
                             <li>
                                 <Link href="/">Home 1</Link>
                             </li>
@@ -113,7 +115,7 @@ function Navigation({ lang = false }) {
                             <li>
                                 <Link href="/home-rtl">Home Rtl</Link>
                             </li>
-                        </ul>
+                        </ul>*/}
                     </li>
                     <li>
                         <Link href="/service">Service</Link>
@@ -157,7 +159,7 @@ function Navigation({ lang = false }) {
                         <Link href="/contact">Contact</Link>
                     </li>
                 </ul>
-            )}
+           
         </>
     );
 }
